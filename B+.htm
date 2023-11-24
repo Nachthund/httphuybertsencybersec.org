@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Interactive Test</title>
+ <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      margin: 5px 0;
+    }
+    .question {
+      flex: 1;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+    }
+    .correct { color: green; }
+    .incorrect { color: red; }
+    .correctAnswer, .explanation {
+      flex: 1;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+    }
+ </style>
+</head>
+<body>
+ <div class="container">
+   <div id="question"></div>
+   <div id="correctAnswer"></div>
+   <div id="explanation"></div>
+ </div>
+
+ <script>
+    function runTest(question, answer, explanation) {
+      const userAnswer = prompt(question);
+
+      const questionDiv = document.getElementById("question");
+      const correctAnswerDiv = document.getElementById("correctAnswer");
+      const explanationDiv = document.getElementById("explanation");
+
+      if (userAnswer.toLowerCase() === answer.toLowerCase()) {
+        correctAnswerDiv.className = "correct";
+        correctAnswerDiv.textContent = "Correct!";
+      } else {
+        correctAnswerDiv.className = "incorrect";
+        correctAnswerDiv.textContent = "Incorrect!";
+      }
+
+      questionDiv.textContent = "Question: " + question;
+      correctAnswerDiv.textContent = "The correct answer is: " + answer;
+      explanationDiv.textContent = "Explanation: " + explanation;
+    }
+
+    // Usage example
+    runTest("What is the capital of France?", "Paris", "Paris is the capital of France.");
+ </script>
+</body>
+</html>

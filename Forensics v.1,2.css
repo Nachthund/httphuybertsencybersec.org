@@ -1,0 +1,166 @@
+h6 {
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-family: Helvetica;
+}
+
+h1 {
+    text-shadow: 1px 1px 4px black, 3px 6px purple, 5px 5px 8px red, 7px 7px 10px purple;
+}
+
+b {
+    text-shadow: 1px 1px 4px black, 3px 6px purple, 5px 5px 8px red, 7px 7px 10px purple;
+    
+}
+
+body {
+  background-color: black;
+
+}
+
+button {
+    margin: 5px 10px 5px 10px;
+    padding: 4px 7px 4px 7px;
+    border: solid black;
+    background-color: cyan;
+}
+
+.box {
+    margin: 5px 10px 5px 10px;
+    width: 69%;
+    box-sizing: border-box;
+    border: 8px solid red;
+    box-shadow: 1px 1px 4px whitesmoke, 3px 6px purple, 5px 5px 8px red, 7px 7px 10px purple;
+    border-radius: 5px;
+
+
+}
+.knox {
+    border:6px solid blue;
+    border-radius: 5px;
+    background-color: black;
+
+}
+
+.fox {
+    border:6px solid white;
+    border-radius: 5px;
+
+}
+
+h4 {
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-family: Helvetica;
+    text-shadow: 1px 1px 4px whitesmoke, 3px 6px purple, 5px 5px 8px red, 7px 7px 10px purple;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.tux {
+    border-top: 5px solid red;
+    border-right: 5px solid red;
+    border-bottom: 5px solid red;
+    border-left: 5px solid red;
+    background-color: black;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+tr:nth-child(even) {
+    background-color:black;
+}
+
+button {
+    align-items: center;
+    text-decoration: none;
+}
+
+strong {
+    font-size:20px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-stretch:ultra-expanded;
+}
+
+/*...............................................................................................................................*/
+.neon{
+    font-family: 'Monoton', cursive;
+    font-size:80px;
+    color: #d5fff3;
+    position: left 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 0%);
+    font-weight: 200;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+  }
+  
+  .flicker-slow{
+    animation: flicker 3s linear infinite;
+  }
+  
+  .flicker-fast{
+    animation: flicker 1s linear infinite;
+  }
+  
+  @keyframes flicker {
+      0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+          //text-shadow: none;
+      opacity: .99;
+          
+      }
+      20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+          opacity: 0.4;
+      }
+  }
+/*..............................................................................................................................................*/  
+.neonn{
+    font-family: 'Monoton', cursive;
+    font-size:40px;
+    color: #d5fff3;
+    position: left 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 0%);
+    font-weight: 200;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+  }
+  /*................................................................................................................................................*/
+  .neonnn{
+    font-family: 'Monoton', cursive;
+    font-size:30px;
+    color: cyan;
+    position: left 50px;
+    top: 0%;
+    left: 0px;
+    transform: translate(0%, 0%);
+    font-weight: 400;
+    letter-spacing: 12px;
+    text-shadow: 1px 0px 4px #22067e, 2px 0px 4px #22067e, 3px 0px 4px #FFD5FF, 2px 0px 3px purple, 2px 3px 15px purple, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+  }
+/*..............................................................................................................................................*/  
+.neons{
+    font-family: 'Monoton', cursive;
+    font-size:0px;
+    color: red;
+    position: left 50px;
+    top: 0%;
+    left: 0px;
+    transform: translate(0%, 0%);
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-shadow: 1px 0px 4px white, 2px 0px 4px #838996, 3px 0px 4px #FFD5FF, 2px 0px 3px white, 2px 3px 15px #838996, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+  }
+/*..............................................................................................................................................*/  

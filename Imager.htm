@@ -1,0 +1,50 @@
+
+<head>
+    <title>Simple Marker</title>
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA20uQ1aLMp0ysRIW_OmnlhedZwbMqqoU&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <gmp-map center="40.799224853515625,-81.3785400390625" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="40.799224853515625,-81.3785400390625" title="My location">
+      </gmp-advanced-marker>
+    </gmp-map>
+  </body>
+  <input id="search-bar" type="text" placeholder="Search a location...">
+  <script>document.getElementById('search-bar').addEventListener('change', function() {
+    var address = this.value;
+    geocodeAddress(address, function(location) {
+       map.setCenter(location);
+       addMarker(location);
+    });
+   });
+   function geocodeAddress(address, callback) {
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({address: address}, function(results, status) {
+       if (status === google.maps.GeocoderStatus.OK) {
+         callback(results[0].geometry.location);
+       } else {
+         console.log('Geocode was not successful for the following reason: ' + status);
+       }
+    });
+   }
+   
+   function addMarker(location) {
+    var marker = new google.maps.Marker({
+       position: location,
+       map: map
+    });
+   }
+   
+   document.getElementById('search-bar').addEventListener('change', function() {
+    var address = this.value;
+    geocodeAddress(address, function(location) {
+       map.setCenter(location);
+       addMarker(location);
+    });
+   });
+</script>
+</html>
